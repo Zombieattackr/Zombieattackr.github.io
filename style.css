@@ -1,0 +1,111 @@
+body {
+     font-family: "Consolas";
+     background-color: #333;
+     color: white;
+     text-align: center;
+}
+
+ .navbar {
+     overflow: hidden;
+     background-color: #222;
+}
+
+ .navbar a {
+     float: left;
+     font-size: 16px;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+}
+
+ .dropdown {
+     float: left;
+     overflow: hidden;
+}
+
+ .dropdown .dropbtn {
+     font-size: 16px;
+     border: none;
+     outline: none;
+     color: white;
+     background-color: inherit;
+     font-family: inherit;
+     margin: 0;
+}
+
+ .navbar a:hover, .dropdown:hover .dropbtn {
+     background-color: cyan;
+     color: darkgrey;
+     font-weight: bold;
+}
+
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #4d4d4d;
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+     z-index: 1;
+}
+
+ .dropdown-content a {
+     float: none;
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+}
+
+ .dropdown-content a:hover {
+     background-color: #ddd;
+}
+
+ .dropdown:hover .dropdown-content {
+     display: block;
+}
+
+< !-- dropside -->
+ .dropside {
+     overflow: hidden;
+}
+
+ .dropside .dropsidebtn {
+     font-size: 1px;
+     border: none;
+     outline: none;
+     color: cyan;
+     padding: -1px -1px;
+     background-color: inherit;
+     font-family: inherit;
+     margin: 0;
+}
+
+ .dropdown-content a:hover, .dropside:hover .dropsidebtn {
+     background-color: #555;
+     color: white;
+}
+
+ .dropside-content {
+     display: none;
+     position: absolute;
+     background-color: #666;
+     width: inherit;
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+     z-index: 1;
+}
+
+ .dropside-content a {
+     float: none;
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+}
+
+ .dropside-content a:hover {
+     background-color: #555;
+}
+
+ .dropside:hover .dropside-content {
+     display: inline;
+}
