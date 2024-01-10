@@ -46,6 +46,8 @@ const options3 = { //Thr Mar 14 2024 15:14:15.926 (Eastern Standard Time)
 const dtForm1 = new Intl.DateTimeFormat('en-US', options1);
 const dtForm3 = new Intl.DateTimeFormat('en-US', options3);
 
+var count = 0;
+
 
 window.onload = function() {
     setInterval(function(){
@@ -94,6 +96,10 @@ window.onload = function() {
             document.getElementById('DT2').innerHTML = line2
             document.getElementById('DT3').innerHTML = line3
             document.getElementById('DT4').innerHTML = line4
+            count++;
+            if(!(count%1000)) {
+                console.log(date);
+            }
         }
     }, 1); // 1ms
 }
